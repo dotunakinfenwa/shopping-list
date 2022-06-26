@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Shopping List</title>
+</head>
+<body>
+<div class="main">
+	<div class="header" id="top">
+		<h2>Shopping List</h2>
+		<p>Keep track of what you want to buy</p>
+		<span id="input"><input type="text" id="myInput" name="" placeholder="Add items...">
+		<button id="myBtn">Add</button></span>
+		<h3>change background colour</h3>
+		<span>
+			<input type="color" id="color1" name="color1" value="#00ff00">
+			<input type="color" id="color2" name="color2" value="#0000ff">
+		</span>
+	</div>
+
+	<div>
+		<ul>
+			<div class="wrapper checked">
+				<li class="items checked">Beverages</li>
+				<button class="delBtn">Delete</button>
+			</div>
+			<div class="wrapper">
+				<li class="items">Eggs</li>
+				<button class="delBtn">Delete</button>
+			</div>
+			<div class="wrapper">
+				<li class="items">Pastries</li>
+				<button class="delBtn">Delete</button>
+			</div>
+			<div class="wrapper">
+				<li class="items">Alcohol</li>
+				<button class="delBtn">Delete</button>
+			</div>
+			<div class="wrapper">
+				<li class="items">Toiletries</li>
+				<button class="delBtn">Delete</button>
+			</div>
+			<div class="wrapper">
+				<li class="items">Noodles</li>
+				<button class="delBtn">Delete</button>
+			</div>
+		</ul>
+	</div>	
+</div>
+
+<footer><h5 id="colorReturn"></h5></footer>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+	transition: 1s;
+}
+
+html {
+	height: 100%;
+}
+
+ body{
+	width: 100%;
+	min-height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	margin: auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(to right, black, skyblue);
+}
+
+.main {
+background-color: #f2f2f2;
+width: 50%;
+height: 50%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+	0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 720px) {
+	.main {
+		width: 75%;
+	}
+}
+
+.header{
+	/* background: linear-gradient(to right, red, yellow); */
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: nowrap;
+}
+
+#input{
+	padding: 20px;
+	display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  #input {
+    flex-direction: column;
+	flex-wrap: nowrap;
+	max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+	#input {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		max-width: 80%;
+	}
+}
+
+#myInput{
+	padding: 0.5rem 10rem 0.5rem 0.2rem;
+	text-align: left;
+	border: none;
+	
+}
+
+#myBtn{
+	padding: 0.5rem 3rem 0.5rem 3rem;
+	text-align: center;
+	background-color: #d9d9d9;
+	border: none;
+}
+
+#myBtn:hover{
+	padding: 0.5rem 3rem 0.5rem 3rem;
+	text-align: center;
+	background-color: #003366;
+	cursor: pointer;
+	color: white;
+	border-width: 2px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+li {
+	width: 100%;
+	padding: 10px 0px;
+
+	  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+li.checked{
+	text-decoration: line-through;
+}
+
+.wrapper{
+	display: flex;
+	background-color: #d9d9d9;
+}
+
+.wrapper:nth-child(even){
+	background-color: #cccccc;
+}
+
+.wrapper:hover{
+	background-color: #999;
+}
+
+.wrapper.checked{
+	background-color: #666;
+}
+
+.delBtn {
+	background-color: rgba(83, 121, 121, 0);
+	border-width: 0px;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.delBtn:hover {
+	background-color: #cc3300;
+	border-width: 0px;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	cursor: pointer;
+}
